@@ -25,4 +25,4 @@ Free to use and adapt.
 Credit appreciated but not required.
 
 ## Author
-Ramki | mindthegrc.com
+Ramki | mindthegrc.substack.com
