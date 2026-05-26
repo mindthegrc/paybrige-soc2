@@ -1,0 +1,95 @@
+{
+  "Alarms": [
+    {
+      "AlarmName": "paybridge-root-login-detected",
+      "Description": "Alert when AWS root account is used — CC6.1",
+      "MetricName": "RootAccountUsage",
+      "Namespace": "CloudTrailMetrics",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching",
+      "SOC2Control": "CC6.1"
+    },
+    {
+      "AlarmName": "paybridge-iam-policy-change",
+      "Description": "Alert on IAM policy changes — CC6.1",
+      "MetricName": "IAMPolicyChanges",
+      "Namespace": "CloudTrailMetrics",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching",
+      "SOC2Control": "CC6.1"
+    },
+    {
+      "AlarmName": "paybridge-unauthorized-api-calls",
+      "Description": "Alert on unauthorized API calls — CC7.2",
+      "MetricName": "UnauthorizedAPICalls",
+      "Namespace": "CloudTrailMetrics",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 5,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching",
+      "SOC2Control": "CC7.2"
+    },
+    {
+      "AlarmName": "paybridge-console-login-without-mfa",
+      "Description": "Alert on console login without MFA — CC6.1",
+      "MetricName": "ConsoleSignInWithoutMFA",
+      "Namespace": "CloudTrailMetrics",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching",
+      "SOC2Control": "CC6.1"
+    },
+    {
+      "AlarmName": "paybridge-security-group-change",
+      "Description": "Alert on security group changes — CC8.1",
+      "MetricName": "SecurityGroupChanges",
+      "Namespace": "CloudTrailMetrics",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching",
+      "SOC2Control": "CC8.1"
+    },
+    {
+      "AlarmName": "paybridge-s3-bucket-policy-change",
+      "Description": "Alert on S3 policy changes — CC6.1",
+      "MetricName": "S3BucketPolicyChanges",
+      "Namespace": "CloudTrailMetrics",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching",
+      "SOC2Control": "CC6.1"
+    },
+    {
+      "AlarmName": "paybridge-vpc-changes",
+      "Description": "Alert on VPC configuration changes — CC8.1",
+      "MetricName": "VPCChanges",
+      "Namespace": "CloudTrailMetrics",
+      "Statistic": "Sum",
+      "Period": 300,
+      "EvaluationPeriods": 1,
+      "Threshold": 1,
+      "ComparisonOperator": "GreaterThanOrEqualToThreshold",
+      "TreatMissingData": "notBreaching",
+      "SOC2Control": "CC8.1"
+    }
+  ]
+}
